@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MusicPlayer_ConsoleApp/1.0.0": {
+        "runtime": {
+          "MusicPlayer_ConsoleApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MusicPlayer_ConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/bin/Debug/net6.0/MusicPlayer_ConsoleApp
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/bin/Debug/net6.0/MusicPlayer_ConsoleApp.deps.json
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/bin/Debug/net6.0/MusicPlayer_ConsoleApp.runtimeconfig.json
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/bin/Debug/net6.0/MusicPlayer_ConsoleApp.dll
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/bin/Debug/net6.0/MusicPlayer_ConsoleApp.pdb
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/obj/Debug/net6.0/MusicPlayer_ConsoleApp.csproj.AssemblyReference.cache
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/obj/Debug/net6.0/MusicPlayer_ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/obj/Debug/net6.0/MusicPlayer_ConsoleApp.AssemblyInfoInputs.cache
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/obj/Debug/net6.0/MusicPlayer_ConsoleApp.AssemblyInfo.cs
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/obj/Debug/net6.0/MusicPlayer_ConsoleApp.csproj.CoreCompileInputs.cache
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/obj/Debug/net6.0/MusicPlayer_ConsoleApp.dll
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/obj/Debug/net6.0/refint/MusicPlayer_ConsoleApp.dll
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/obj/Debug/net6.0/MusicPlayer_ConsoleApp.pdb
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/obj/Debug/net6.0/MusicPlayer_ConsoleApp.genruntimeconfig.cache
+/Users/mac/Desktop/My c# Projects/My-Genaral-C--PROJECTS/MusicPlayer_ConsoleApp/MusicPlayer_ConsoleApp/obj/Debug/net6.0/ref/MusicPlayer_ConsoleApp.dll
