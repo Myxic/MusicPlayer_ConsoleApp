@@ -1,0 +1,28 @@
+﻿using System;
+namespace MusicPlayer_ConsoleApp
+{
+    public class PlaylistOperation
+    {
+        public static Dictionary<string, List<string>>? MyPlaylist;
+        public PlaylistOperation()
+        {
+        }
+
+        public static void AddPlaylist(object hey)
+        {
+            
+             hey = new List<string>();
+            Console.WriteLine(hey);
+        }
+        public static void ToDoList()
+        {
+            Console.WriteLine("Enter 1 to Listen to Previous Song, \n" +
+                "Enter 2 to Listen to Next Song, \n" +
+                "Enter 3 to Shuffle Songs, \n" +
+                "Enter 4 to Play Songs Exact Order they were added, \n" +
+                "Enter 5 to Play Songs in Alphabetical Order, \n"+
+                "Enter 0 to Return to Main Menu.");
+        }
+    }
+}
+
