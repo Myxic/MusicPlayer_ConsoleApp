@@ -2,35 +2,32 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="MusicPlayer_ConsoleApp/PlaylistOperation.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../MusicPlayer_ConsoleApp/PlaylistOperation.cs" line="32" column="16" endLine="32" endColumn="26" offsetX="-1" offsetY="-1" expression="MyPlaylist" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MusicPlayer__ConsoleApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MusicPlayer_ConsoleApp/EditMusicApp.cs">
     <Files>
-      <File FileName="MusicPlayer_ConsoleApp/Program.cs" Line="16" Column="2" />
-      <File FileName="MusicPlayer_ConsoleApp/SongControls.cs" />
-      <File FileName="MusicPlayer_ConsoleApp/PlaylistOperation.cs" Line="67" Column="46" />
-      <File FileName="MusicPlayer_ConsoleApp/ButtonControls.cs" />
+      <File FileName="MusicPlayer_ConsoleApp/Program.cs" Line="31" Column="35" />
+      <File FileName="MusicPlayer_ConsoleApp/SongControls.cs" Line="167" Column="43" />
+      <File FileName="MusicPlayer_ConsoleApp/PlaylistOperation.cs" Line="27" Column="75" />
+      <File FileName="MusicPlayer_ConsoleApp/EditMusicApp.cs" Line="10" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MusicPlayer_ConsoleApp" expanded="True">
             <Node name="MusicPlayer_ConsoleApp" expanded="True">
-              <Node name="PlaylistOperation.cs" selected="True" />
+              <Node name="EditMusicApp.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="MusicPlayer_ConsoleApp" expanded="True" />
-        </State>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MusicPlayer__ConsoleApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="../../../MusicPlayer_ConsoleApp/PlaylistOperation.cs" line="32" column="16" endLine="32" endColumn="26" offsetX="-1" offsetY="-1" expression="MyPlaylist" liveUpdate="False" />
-    <Watch file="../../../MusicPlayer_ConsoleApp/PlaylistOperation.cs" line="33" column="16" endLine="33" endColumn="26" offsetX="-1" offsetY="-1" expression="MyPlaylist" liveUpdate="False" />
-  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>
