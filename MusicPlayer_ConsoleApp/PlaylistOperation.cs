@@ -8,11 +8,11 @@ namespace MusicPlayer_ConsoleApp
 {
     public class PlaylistOperation
     {
-        private static List<string> ABetterDay = new List<string>() { "Failure", "Loser1", "Raise", "Fuck around and Find out" };
-        private static List<string> BetterDays = new List<string>() { "Passable", "Father say", "Raise Hell", "Fuck around and Find See" };
-        private static List<string> HorrorDays = new List<string>() { "C#", "Python", "Wow", "Fuck C and Find C++" };
-        private static List<string> PeaceDay = new List<string>() { "Able", "Loser", "Raise", "Hmmm around and Find out" };
-        private static List<string> NoPlace4PeaceDay = new List<string>() { "Failure HEY", "Loser WOW", "Raise Except", "Fuck around and See Hell" };
+        protected static List<string> ABetterDay = new List<string>() { "Failure", "Loser1", "Raise", "Fuck around and Find out" };
+        protected static List<string> BetterDays = new List<string>() { "Passable", "Father say", "Raise Hell", "Fuck around and Find See" };
+        protected static List<string> HorrorDays = new List<string>() { "C#", "Python", "Wow", "Fuck C and Find C++" };
+        protected static List<string> PeaceDay = new List<string>() { "Able", "Loser", "Raise", "Hmmm around and Find out" };
+        protected static List<string> NoPlace4PeaceDay = new List<string>() { "Failure HEY", "Loser WOW", "Raise Except", "Fuck around and See Hell" };
         public static Dictionary<string, List<string>> MyPlaylist = new Dictionary<string, List<string>>() {
             {"A Better Day", ABetterDay },
             {"Better Days", BetterDays },
@@ -23,12 +23,12 @@ namespace MusicPlayer_ConsoleApp
         };
         public static SortedDictionary<string, List<string>> SortedPlaylist = new SortedDictionary<string, List<string>>(MyPlaylist);
         private static bool IsActive;
-        private static int Count = 0;
-        private static List<string> MyListPlaylist = new List<string>();
-        private static readonly string pattern = @"[a-zA-Z0-9]{1,}";
+        protected static int Count = 0;
+        protected static List<string> MyListPlaylist = new List<string>();
+        private static readonly string pattern = @"[a-zA-Z0-9]{1,17}";
         private static readonly string pattern1 = @"[0-9]{1,}";
         private static readonly Regex reg = new Regex(pattern);
-        private static readonly Regex reg1 = new Regex(pattern1);
+        protected static readonly Regex reg1 = new Regex(pattern1);
         public PlaylistOperation()
         {
 
@@ -53,7 +53,7 @@ namespace MusicPlayer_ConsoleApp
             else
             {
                 Console.Clear();
-                Console.WriteLine("Playlist not added: Wrong Format");
+                Console.WriteLine($"{Playlist}Playlist not added: Wrong Format");
                 //AddPlaylist();
                 goto start;
             }
@@ -61,7 +61,7 @@ namespace MusicPlayer_ConsoleApp
             ReturnToMainMenu();
 
         }
-        private static void ReturnToMainMenu()
+        public static void ReturnToMainMenu()
         {
             start:  Console.WriteLine("\nEnter 0 to Return to Main Menu.");
             string menu = Console.ReadLine();
@@ -128,7 +128,7 @@ namespace MusicPlayer_ConsoleApp
               
                 int Index = Convert.ToInt32(Option);
                 int Limit = MyPlaylist.Count ;
-                if (0 <= Index & Index <= Limit )
+                if (Count <= Index & Index <= Limit )
                 {
                     switch (Index)
                     {
@@ -153,14 +153,14 @@ namespace MusicPlayer_ConsoleApp
             else
             {
                 Console.Clear();
-                Console.WriteLine("hmm");
+                
                 Console.WriteLine($"{Option} is an invalid Option");
                 //DisplayPlaylist();
                 goto start;
             }
             
         }
-        public static void SongInPlayList(int Index)
+        protected static void ShowSongsinPlaylist(int Index)
         {
             string Playlist = MyListPlaylist[Index - 1];
             Console.Clear();
@@ -171,7 +171,11 @@ namespace MusicPlayer_ConsoleApp
                 Console.Write($"{Count}: ");
                 Console.WriteLine(ThisSong);
             }
-            
+
+        }
+        public static void SongInPlayList(int Index)
+        {
+            ShowSongsinPlaylist(Index);
             ReturnToMainMenu();
         }
         public static void ToDoList()

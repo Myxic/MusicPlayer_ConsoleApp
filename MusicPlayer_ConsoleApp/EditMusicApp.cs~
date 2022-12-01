@@ -1,0 +1,20 @@
+﻿using System;
+namespace MusicPlayer_ConsoleApp
+{
+    public class EditMusicApp
+    {
+        public EditMusicApp()
+        {
+        }
+
+        public  static  void DeletePlaylist()
+        {
+
+        }
+        public static void AddSongToPlaylist()
+        {
+
+        }
+    }
+}
+

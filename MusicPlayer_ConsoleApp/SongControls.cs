@@ -26,21 +26,71 @@ namespace MusicPlayer_ConsoleApp
         }
         public static int NextSong()
         {
-           
-            //Console.WriteLine($"Now Playing {Songs()[_count]}");
-            _count++;
+            //Add Validation
+            //if (_count > Songs().Count)
+            // {
+            //     _count = 0;
+            //     return _count;
+            // }
+            // if (_count !> 0)
+            // {
+                 _count++;
+            //     return _count;
+            // }
+            // return _count;
+            //switch (_count > Songs().Count)
+            //{
+            //    case true:
+            //        return _count = 0;
+            //    default:
+
+            //        return _count++;
+            //}
             return _count;
+
         }
         public static int PreviousSong()
         {
-            
-            _count--;
+            //Add Validation
+            //if (_count < 0)
+            //{
+            //    _count = Songs().Count;
+            //    return _count;
+            //}
+            //if (_count !< 0)
+            //{
 
+                _count--;
+            //    return _count;
+            //}
+            //return _count;
+            //switch (_count < 0)
+            //{
+            //    case true:
+            //        return _count = Songs().Count; 
+            //    default:
+            //        return _count--;
+            //}
             return _count;
+
         }
         public static void Shuffle()
         {
-            
+            int Limit = Songs().Count;
+            Random rd = new Random();
+            //int rand_num = rd.Next(0, Limit);
+            List<int> CatchRepeatNo = new List<int>();
+            for (int i = 0; i < Limit; i++)
+            {
+                int rand_num = rd.Next(0, Limit);
+                if (!CatchRepeatNo.Contains(rand_num))
+                {
+                    CatchRepeatNo.Add(rand_num);
+                    Console.WriteLine($"Now Playing \"{Songs()[rand_num]}\" Don'tPress anything please please");
+                    Thread.Sleep(4000);
+                }
+            }
+            PlaylistOperation.ReturnToMainMenu();
         }
         public static void AlphabeticSong()
         {
@@ -53,6 +103,7 @@ namespace MusicPlayer_ConsoleApp
             }
             Console.WriteLine("\n \nEnter No:\n" +
                 "1: To Play songs \n" +
+                "2: To Shuffle songs\n" +
                 "0: To Return to Main Menu");
             string input = Console.ReadLine();
             switch (input)
@@ -65,6 +116,10 @@ namespace MusicPlayer_ConsoleApp
                     Console.Clear();
                     Play(SortedSongs,0);
                     break;
+                case "2":
+                    Console.Clear();
+                    Shuffle();
+                    break;
                 default:
                     goto start;
             }
@@ -76,8 +131,9 @@ namespace MusicPlayer_ConsoleApp
             {
                 Console.WriteLine(song);
             }
-            Console.WriteLine("\n \nEnter No:\n " +
+            Console.WriteLine("\n \nEnter No:\n" +
                 "1: To Play songs \n" +
+                "2: To Shuffle songs\n" +
                 "0: To Return to Main Menu");
             string input = Console.ReadLine();
             switch (input)
@@ -90,6 +146,10 @@ namespace MusicPlayer_ConsoleApp
                     Console.Clear();
                     Play(Songs(),0);
                     break;
+                case "2":
+                    Console.Clear();
+                    Shuffle();
+                    break;
                 default:
                     goto start;
             }
@@ -99,9 +159,20 @@ namespace MusicPlayer_ConsoleApp
         {
             //Count = 0;
             //_count = 0;
-            start:  Console.WriteLine($"Now Playing \"{Playthis[_count]}\"\n" +
+            if (Count < 0)
+            {
+                _count = Songs().Count - 1;
+                //return _count;
+            }
+            if (Count > Songs().Count - 1)
+            {
+
+                    _count = 0;
+                //    return _count;
+            }
+        start:  Console.WriteLine($"Now Playing \"{Playthis[_count]}\"\n" +
                 "\n" +
-                "Enter No: \n" +
+                "Enter No: \n"+
                 "1: For Next Song\n" +
                 "2: For Prev Song\n" +
                 "0: To Return to Main Menu");
