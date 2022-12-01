@@ -27,7 +27,7 @@ namespace MusicPlayer_ConsoleApp
         protected static List<string> MyListPlaylist = new List<string>();
         private static readonly string pattern = @"[a-zA-Z0-9]{1,17}";
         private static readonly string pattern1 = @"[0-9]{1,}";
-        private static readonly Regex reg = new Regex(pattern);
+        protected static readonly Regex reg = new Regex(pattern);
         protected static readonly Regex reg1 = new Regex(pattern1);
         public PlaylistOperation()
         {

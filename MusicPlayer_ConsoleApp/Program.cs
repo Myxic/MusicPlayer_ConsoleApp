@@ -16,7 +16,11 @@ class Program
     }
     private static void MainMenu()
     {
-        Start:  Console.WriteLine("Enter No: \n" +
+        Start:  Console.Write("__________________________________________________________________\n" +
+            "\t\t MUSIC PLAYER MENU \n" +
+            "__________________________________________________________________\n" +
+            "------------------------------------------------------------------\n" +
+            "Enter No: \n" +
             "1: View All Playlists \n" +
             "2: View All Songs \n" +
             "3: Add Playlist \n" +
@@ -24,7 +28,9 @@ class Program
             "5: Delete Playlist \n" +
             "6: Delete Song in Playlist \n" +
             "7: Add Song to an existing Playlist\n" +
-            "8: Shuffle Songs");
+            "8: Shuffle Songs\n" +
+            "9: Exit\n" +
+            "===>  ");
         string Input = Console.ReadLine();
         switch (Input)
         {
@@ -60,6 +66,8 @@ class Program
                 Console.Clear();
                 SongControls.Shuffle();
                 break;
+            case "9":
+                break;
             default:
                 Console.Clear();
                 Console.WriteLine($"{Input} is an Invalid Input");
@@ -89,6 +97,8 @@ class Program
                 SongControls.AlphabeticSong();
                 break;
             default:
+                Console.Clear();
+                Console.WriteLine($"{Input} is an invalid option");
                 goto start;
         }
     }
