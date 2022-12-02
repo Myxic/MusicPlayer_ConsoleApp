@@ -17,8 +17,8 @@
 * Display Songs in Alphabetical Other
 
 ## Basic Implementation
-# (Collections)
-* Dictionary
-* List
+* # (Collections)
+* * Dictionary
+* * List
 
 
