@@ -18,7 +18,7 @@
 
 ## Basic Implementation
 * # (Collections)
-* * Dictionary
-* * List
+  * Dictionary
+  * List
 
 
