@@ -2,11 +2,22 @@
  MusicPlayer_ConsoleApp 
 
 ## Basic Functions
-View All Playlists \n
-View All Songs \n
-Add Playlist \n" +
-Edit Songs in Playlist \n" +
-Delete Playlist \n" +
-Delete Song in Playlist \n" +
-Add Song to an existing Playlist\n" +
-Shuffle Songs\n"
+* View All Playlists
+* View All Songs
+* Add Playlist
+* Edit Songs in Playlist
+* Delete Playlist
+* Delete Song in Playlist
+* Add Song to an existing Playlist
+* Shuffle Songs
+
+## Other Function Include
+* Next Song
+* Previous Song
+* Display Songs in Alphabetical Other
+
+## Basic Implementation
+* Dictionary
+* List
+* # (Collections)
+
