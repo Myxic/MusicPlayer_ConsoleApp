@@ -24,6 +24,6 @@
 
 * Microsoft visual studio 2022
 * C# 👓
-+ .NET 6
+* .NET 6
 
 
