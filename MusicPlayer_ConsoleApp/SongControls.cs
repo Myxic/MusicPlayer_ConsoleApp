@@ -7,7 +7,7 @@ namespace MusicPlayer_ConsoleApp
     public class SongControls
     {
         private static int _count;
-        //private static 
+
         public SongControls()
         {
             _count = 0;
@@ -26,51 +26,17 @@ namespace MusicPlayer_ConsoleApp
         }
         public static int NextSong()
         {
-            //Add Validation
-            //if (_count > Songs().Count)
-            // {
-            //     _count = 0;
-            //     return _count;
-            // }
-            // if (_count !> 0)
-            // {
+          
                  _count++;
-            //     return _count;
-            // }
-            // return _count;
-            //switch (_count > Songs().Count)
-            //{
-            //    case true:
-            //        return _count = 0;
-            //    default:
-
-            //        return _count++;
-            //}
+         
             return _count;
 
         }
         public static int PreviousSong()
         {
-            //Add Validation
-            //if (_count < 0)
-            //{
-            //    _count = Songs().Count;
-            //    return _count;
-            //}
-            //if (_count !< 0)
-            //{
+    
 
                 _count--;
-            //    return _count;
-            //}
-            //return _count;
-            //switch (_count < 0)
-            //{
-            //    case true:
-            //        return _count = Songs().Count; 
-            //    default:
-            //        return _count--;
-            //}
             return _count;
 
         }
@@ -157,18 +123,17 @@ namespace MusicPlayer_ConsoleApp
        
         private static void Play(List<string> Playthis, int Count)
         {
-            //Count = 0;
-            //_count = 0;
+
             if (Count < 0)
             {
                 _count = Songs().Count - 1;
-                //return _count;
+
             }
             if (Count > Songs().Count - 1)
             {
 
                     _count = 0;
-                //    return _count;
+
             }
         start:  Console.WriteLine($"Now Playing \"{Playthis[_count]}\"\n" +
                 "\n" +
@@ -198,9 +163,6 @@ namespace MusicPlayer_ConsoleApp
                     goto start;
                     
             }
-
-
-
         }
     }
 }

@@ -53,7 +53,7 @@ namespace MusicPlayer_ConsoleApp
                 {
                     Console.Clear();
                     Console.WriteLine($"{Index} is an invalid Option");
-                    //DisplayPlaylist();
+
                     goto start;
                 }
             }
@@ -61,7 +61,7 @@ namespace MusicPlayer_ConsoleApp
             {
                 Console.Clear();
                 Console.WriteLine($"{Option} is an invalid Option");
-                //DisplayPlaylist();
+
                 goto start;
             }
 
@@ -98,8 +98,6 @@ namespace MusicPlayer_ConsoleApp
 
                             AddingSong(Index);
                             break;
-
-
                     }
                 }
                 else
@@ -150,8 +148,6 @@ namespace MusicPlayer_ConsoleApp
 
                             DeleteSong(Index);
                             break;
-
-
                     }
                 }
                 else
@@ -274,8 +270,6 @@ namespace MusicPlayer_ConsoleApp
 
                             EditingSong(Index);
                             break;
-
-
                     }
                 }
                 else
