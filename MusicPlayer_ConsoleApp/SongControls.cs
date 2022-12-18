@@ -53,7 +53,7 @@ namespace MusicPlayer_ConsoleApp
                 {
                     CatchRepeatNo.Add(rand_num);
                     Console.WriteLine($"Now Playing \"{Songs()[rand_num]}\" Don'tPress anything please please");
-                    Thread.Sleep(4000);
+                    Thread.Sleep(1000);
                 }
             }
             PlaylistOperation.ReturnToMainMenu();
