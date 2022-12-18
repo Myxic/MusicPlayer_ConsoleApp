@@ -8,11 +8,16 @@ namespace MusicPlayer_ConsoleApp
 {
     public class PlaylistOperation
     {
-        protected static List<string> ABetterDay = new List<string>() { "Failure", "Loser1", "Raise", "Fuck around and Find out" };
-        protected static List<string> BetterDays = new List<string>() { "Passable", "Father say", "Raise Hell", "Fuck around and Find See" };
-        protected static List<string> HorrorDays = new List<string>() { "C#", "Python", "Wow", "Fuck C and Find C++" };
+        protected static List<string> ABetterDay = new List<string>() { "Failure", "Loser1", "Raise", " around and Find out" };
+
+        protected static List<string> BetterDays = new List<string>() { "Passable", "Father say", "Raise Hell", "look around and Find See" };
+
+        protected static List<string> HorrorDays = new List<string>() { "C#", "Python", "Wow", "C and Find C++" };
+
         protected static List<string> PeaceDay = new List<string>() { "Able", "Loser", "Raise", "Hmmm around and Find out" };
-        protected static List<string> NoPlace4PeaceDay = new List<string>() { "Failure HEY", "Loser WOW", "Raise Except", "Fuck around and See Hell" };
+
+        protected static List<string> NoPlace4PeaceDay = new List<string>() { "Failure HEY", "Loser WOW", "Raise Except", " around and See Hell" };
+
         public static Dictionary<string, List<string>> MyPlaylist = new Dictionary<string, List<string>>() {
             {"A Better Day", ABetterDay },
             {"Better Days", BetterDays },
@@ -21,14 +26,23 @@ namespace MusicPlayer_ConsoleApp
             {"No Place 4 Peace Day", NoPlace4PeaceDay },
 
         };
+
         public static SortedDictionary<string, List<string>> SortedPlaylist = new SortedDictionary<string, List<string>>(MyPlaylist);
+
         private static bool IsActive;
+
         protected static int Count = 0;
+
         protected static List<string> MyListPlaylist = new List<string>();
+
         private static readonly string pattern = @"[a-zA-Z0-9]{1,17}";
+
         private static readonly string pattern1 = @"[0-9]{1,}";
+
         protected static readonly Regex reg = new Regex(pattern);
+
         protected static readonly Regex reg1 = new Regex(pattern1);
+
         public PlaylistOperation()
         {
 
@@ -64,7 +78,7 @@ namespace MusicPlayer_ConsoleApp
         public static void ReturnToMainMenu()
         {
             start:  Console.WriteLine("\nEnter 0 to Return to Main Menu.");
-            string menu = Console.ReadLine();
+            string? menu = Console.ReadLine();
 
             switch (menu)
             {
@@ -90,9 +104,9 @@ namespace MusicPlayer_ConsoleApp
 
                 Console.WriteLine("Enter Name of Song");
                 string? Song = Console.ReadLine();
-                if (reg.IsMatch(Song))
+                if (reg.IsMatch(Song?? ""))
                 {
-                    Songs.Add(Song);
+                    Songs.Add(Song?? "");
                 }
                 else
                 {
@@ -100,8 +114,8 @@ namespace MusicPlayer_ConsoleApp
                 }
 
                 Console.Write("Enter N to Stop Adding Song");
-                string cancel = Console.ReadLine();
-                if (cancel.ToLower() == "n")
+                string? cancel = Console.ReadLine();
+                if (cancel?.ToLower() == "n")
                 {
                     IsActive = false;
                 }
